@@ -121,3 +121,43 @@ function exe7(){
     }
 
 } 
+function exe22(){
+        peso = Number(document.getElementById("peso").value)
+        idade = Number(document.getElementById("idade").value)
+        risco = 0
+    if ( idade < 50) {
+        if ( peso < 90){
+            alert ("risco 1")   
+        }
+        else if (( idade <= 60) && (peso < 90)) {
+            alert ("risco 2")       
+        }
+        else {
+            alert ("risco 3")
+        }   
+    }
+     else if (( idade > 20) && ( idade > 50)) {
+         if(peso > 90){
+             alert ("risco 4")
+         }
+        else if (( idade > 60)  && ( idade < 90)) {
+            alert ("risco 5")
+        }
+        else  {
+         if(peso > 90){
+            alert ("risco 6")
+         }
+        }    
+        }
+        else if ( idade < 20) {
+            if (peso > 90) {
+             alert ("risco 7")
+            }
+             else if (( idade > 60) && ( idade < 90))  {
+                  alert ("risco 8")
+            }
+        else {
+            alert ("risco 9")
+       }
+        }
+}
